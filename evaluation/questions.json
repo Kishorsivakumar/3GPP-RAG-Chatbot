@@ -1,0 +1,181 @@
+[
+  {
+    "id": "Q01",
+    "category": "definition",
+    "question": "What is a PDU Session?",
+    "answerable": true,
+    "expected_sections": ["5.6.1"]
+  },
+  {
+    "id": "Q02",
+    "category": "definition",
+    "question": "What is a Data Network (DN) in the 5G System?",
+    "answerable": true,
+    "expected_sections": ["4.2.2"]
+  },
+  {
+    "id": "Q03",
+    "category": "definition",
+    "question": "What is the Session Management Function (SMF)?",
+    "answerable": true,
+    "expected_sections": ["6.2.2"]
+  },
+  {
+    "id": "Q04",
+    "category": "definition",
+    "question": "What is the User Plane Function (UPF)?",
+    "answerable": true,
+    "expected_sections": ["6.2.3"]
+  },
+  {
+    "id": "Q05",
+    "category": "definition",
+    "question": "What is the Access and Mobility Management Function (AMF)?",
+    "answerable": true,
+    "expected_sections": ["6.2.1"]
+  },
+
+  {
+    "id": "Q06",
+    "category": "role",
+    "question": "What is the role of the AMF in the 5G System?",
+    "answerable": true,
+    "expected_sections": ["6.2.1"]
+  },
+  {
+    "id": "Q07",
+    "category": "role",
+    "question": "What is the role of the SMF?",
+    "answerable": true,
+    "expected_sections": ["6.2.2"]
+  },
+  {
+    "id": "Q08",
+    "category": "role",
+    "question": "What is the role of the UPF?",
+    "answerable": true,
+    "expected_sections": ["6.2.3"]
+  },
+  {
+    "id": "Q09",
+    "category": "role",
+    "question": "What is the role of the PCF?",
+    "answerable": true,
+    "expected_sections": ["6.2.4"]
+  },
+  {
+    "id": "Q10",
+    "category": "role",
+    "question": "What is the role of the NRF?",
+    "answerable": true,
+    "expected_sections": ["6.2.6"]
+  },
+
+  {
+    "id": "Q11",
+    "category": "architecture",
+    "question": "What network functions are part of the 5G System architecture?",
+    "answerable": true,
+    "expected_sections": ["4.2.2"]
+  },
+  {
+    "id": "Q12",
+    "category": "architecture",
+    "question": "What is the non-roaming reference architecture?",
+    "answerable": true,
+    "expected_sections": ["4.2.3"]
+  },
+  {
+    "id": "Q13",
+    "category": "architecture",
+    "question": "What are the main concepts of the 5G System architecture?",
+    "answerable": true,
+    "expected_sections": ["4.1"]
+  },
+  {
+    "id": "Q14",
+    "category": "architecture",
+    "question": "What is the architecture for trusted and untrusted non-3GPP access?",
+    "answerable": true,
+    "expected_sections": ["4.2.8.2"]
+  },
+  {
+    "id": "Q15",
+    "category": "architecture",
+    "question": "What are the reference points for non-3GPP access?",
+    "answerable": true,
+    "expected_sections": ["4.2.8.3"]
+  },
+
+  {
+    "id": "Q16",
+    "category": "table",
+    "question": "Which PDU Session attributes may be modified during the lifetime of a PDU Session?",
+    "answerable": true,
+    "expected_sections": ["5.6.1"]
+  },
+  {
+    "id": "Q17",
+    "category": "table",
+    "question": "What is the standardized mapping between 5QI and QoS characteristics?",
+    "answerable": true,
+    "expected_sections": ["5.7.4"]
+  },
+  {
+    "id": "Q18",
+    "category": "table",
+    "question": "What information is applicable for PCF or NEF according to the standardized table?",
+    "answerable": true,
+    "expected_sections": ["5.6.7.1"]
+  },
+  {
+    "id": "Q19",
+    "category": "table",
+    "question": "What are the ATSSS Rules?",
+    "answerable": true,
+    "expected_sections": ["5.32.8"]
+  },
+  {
+    "id": "Q20",
+    "category": "table",
+    "question": "What services are specified for the AMF?",
+    "answerable": true,
+    "expected_sections": ["7.2.2"]
+  },
+
+  {
+    "id": "Q21",
+    "category": "unanswerable",
+    "question": "What is the capital of France?",
+    "answerable": false,
+    "expected_sections": []
+  },
+  {
+    "id": "Q22",
+    "category": "unanswerable",
+    "question": "What is the current stock price of Apple?",
+    "answerable": false,
+    "expected_sections": []
+  },
+  {
+    "id": "Q23",
+    "category": "unanswerable",
+    "question": "Who is the president of the United States?",
+    "answerable": false,
+    "expected_sections": []
+  },
+  {
+    "id": "Q24",
+    "category": "unanswerable",
+    "question": "What is the weather in Chennai today?",
+    "answerable": false,
+    "expected_sections": []
+  },
+  {
+    "id": "Q25",
+    "category": "unanswerable",
+    "question": "What is the GSM architecture?",
+    "answerable": false,
+    "expected_sections": []
+  }
+]
