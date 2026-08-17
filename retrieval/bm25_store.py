@@ -8,6 +8,15 @@ from typing import Dict, List
 from rank_bm25 import BM25Okapi
 
 
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+CHUNKS_PATH = (
+    PROJECT_ROOT
+    / "data"
+    / "processed"
+    / "chunks.json"
+)
+
 # Project root:
 # 3gpp-rag-chatbot/
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
