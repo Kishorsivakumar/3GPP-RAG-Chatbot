@@ -8,6 +8,16 @@ from typing import Dict, List
 from rank_bm25 import BM25Okapi
 
 
+# Project root:
+# 3gpp-rag-chatbot/
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+DATA_DIR = PROJECT_ROOT / "data"
+PROCESSED_DIR = DATA_DIR / "processed"
+
+CHUNKS_PATH = PROCESSED_DIR / "chunks.json"
+
+
 CHUNKS_PATH = Path(
     r"data\processed\chunks.json"
 )
@@ -97,15 +107,13 @@ class BM25Store:
                 indent=2,
             )
 
-    def load(self) -> None:
-        """
-        Load chunks and rebuild BM25 index.
-        """
-
+    def load(self):
         if not CHUNKS_PATH.exists():
             raise FileNotFoundError(
                 f"Chunks file not found: {CHUNKS_PATH}"
             )
+
+    # existing loading logic...
 
         with CHUNKS_PATH.open(
             "r",
