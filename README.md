@@ -96,6 +96,7 @@ The system follows an evidence-first RAG architecture.
                                   │
                                   ▼
                         Sources + Sections
+```
 
 
 
