@@ -100,8 +100,8 @@ The system follows an evidence-first RAG architecture.
 
 
 
-#🛡️ Hallucination Prevention
-
+🛡️ Hallucination Prevention
+```
 Hallucination prevention is a core design goal of this project.
 
 Instead of using a simple:
@@ -126,7 +126,8 @@ Completeness Validation
    ↓
 Grounded Answer
 
-
+```
+```
 1. Evidence Gate
 
 The Evidence Gate determines whether the retrieved evidence is sufficient to answer the question.
@@ -195,10 +196,10 @@ The AMF provides registration management.
 [TS 23.501, Section 6.2.1]
 
 This allows the answer to be traced back to the source evidence.
+```
 
-
-#🔎 Retrieval Pipeline
-
+🔎 Retrieval Pipeline
+```
 The project uses multiple retrieval strategies because telecom standards contain both semantic concepts and highly specific terminology.
 
 Hybrid Retrieval
@@ -406,10 +407,12 @@ Conceptually:
 }
 
 This behavior is a key part of the hallucination-control strategy.
-
-
 ```
-#🏗️ Project Structure
+
+
+
+🏗️ Project Structure
+```
 3GPP-RAG-Chatbot/
 │
 ├── api/
@@ -493,7 +496,8 @@ Evaluation	Custom evaluation framework
 Version Control	Git / GitHub
 ````
 
-#🚀 How to Run Locally
+🚀 How to Run Locally
+```
 1. Clone the repository
 git clone https://github.com/Kishorsivakumar/3GPP-RAG-Chatbot.git
 cd 3GPP-RAG-Chatbot
@@ -511,10 +515,11 @@ GEMINI_API_KEY=your_api_key
 RAG_LLM_MODEL=gemini-3.6-flash
 
 Do not commit .env or your API key to GitHub.
+```
 
 
-#🖥️ Run the Streamlit Frontend
-
+🖥️ Run the Streamlit Frontend
+```
 From the repository root:
 
 streamlit run frontend/app.py
@@ -556,10 +561,10 @@ The response contains information such as:
   "claim_validation": {},
   "completeness_validation": {}
 }
+```
 
-
-#🌐 Frontend
-
+🌐 Frontend
+```
 The Streamlit frontend provides an interactive interface for querying the 3GPP knowledge base.
 
 The frontend communicates with the RAG pipeline and displays:
@@ -571,10 +576,11 @@ Sources
 Specification section
 Claim validation
 Completeness information
+```
 
 
-#☁️ Deployment Status
-
+☁️ Deployment Status
+```
 The application was tested successfully in the local development environment.
 
 Deployment to the free Render instance was attempted. However, the RAG pipeline exceeded the available 512 MB memory limit during startup because multiple retrieval/model components are loaded into memory.
@@ -582,10 +588,10 @@ Deployment to the free Render instance was attempted. However, the RAG pipeline 
 The complete source code, processed knowledge base, retrieval indexes, evaluation code, and frontend are available in this repository.
 
 The project can therefore be run locally using the instructions above.
+```
 
-
-#⚠️ Limitations
-
+⚠️ Limitations
+```
 The current implementation has several practical limitations:
 
 The complete retrieval pipeline has a relatively high memory footprint.
@@ -593,8 +599,10 @@ Free-tier hosting environments may not provide sufficient memory for all models 
 Gemini API availability depends on API quota and rate limits.
 The current knowledge base is focused primarily on the provided 3GPP documentation.
 The system cannot guarantee mathematical zero hallucination; instead, it uses evidence gating and claim validation to minimize unsupported generation.
-🔮 Future Improvements
+```
 
+🔮 Future Improvements
+```
 Potential improvements include:
 
 Model quantization to reduce memory consumption.
@@ -607,10 +615,10 @@ Automated hallucination and faithfulness metrics.
 Multi-document 3GPP knowledge-base support.
 Authentication and rate limiting for the API.
 Containerized production deployment.
+```
 
-
-#👨‍💻 Author
-
+👨‍💻 Author
+```
 Kishorsivakumar
 
 B.Tech – Artificial Intelligence & Data Science
@@ -619,38 +627,13 @@ GitHub:
 
 https://github.com/Kishorsivakumar
 
+```
 
-
-#📌 Project Repository
-
+📌 Project Repository
+```
 3GPP RAG Chatbot
 
 https://github.com/Kishorsivakumar/3GPP-RAG-Chatbot
+```
 
 
-
-### One important change before you paste this
-
-
-I intentionally used wording like **“minimal hallucination”**, **“evidence-based refusal”**, and **“designed to minimize unsupported generation”** rather than claiming **“zero hallucinations.”**
-
-
-That's important in your interview. You should be able to defend the statement technically:
-
-
-> **“I don't claim that an LLM can mathematically guarantee zero hallucinations. Instead, I designed the system so that generation is conditioned on retrieved evidence, unsupported questions are rejected by the Evidence Gate, and generated claims are subsequently validated against the evidence.”**
-
-
-That is a **much stronger technical answer** than simply saying *“my RAG has zero hallucinations.”*
-
-
-Also, because your actual deployment is currently limited by the free-tier memory constraint, the README's deployment section is transparent rather than pretending you have a working public deployment.
-
-
-After replacing your README:
-
-
-```powershell
-git add README.md
-git commit -m "Improve project documentation for RAG submission"
-git push
