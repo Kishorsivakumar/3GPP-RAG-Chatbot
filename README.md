@@ -479,8 +479,9 @@ This behavior is a key part of the hallucination-control strategy.
 └── README.md
 ```
 
+
+⚙️ Technologies Used
 ```
-#⚙️ Technologies Used
 Component	Technology
 Language	Python
 LLM	Google Gemini
