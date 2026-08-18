@@ -482,19 +482,19 @@ This behavior is a key part of the hallucination-control strategy.
 
 ⚙️ Technologies Used
 ```
-Component	Technology
-Language	Python
-LLM	Google Gemini
-RAG	Custom RAG Pipeline
-Dense Retrieval	FAISS
-Lexical Retrieval	BM25
-Reranking	Transformer-based reranker
-API	FastAPI
-Frontend	Streamlit
-Embeddings	Sentence Transformers
-Validation	Evidence / Claim / Completeness Validators
-Evaluation	Custom evaluation framework
-Version Control	Git / GitHub
+Component           	Technology
+Language           :	Python
+LLM	               :  Google Gemini
+RAG	               :  Custom RAG Pipeline
+Dense Retrieval	   :  FAISS
+Lexical Retrieval	 :  BM25
+Reranking	         :  Transformer-based reranker
+API	               :  FastAPI
+Frontend	         :  Streamlit
+Embeddings	       :  Sentence Transformers
+Validation	       :  Evidence / Claim / Completeness Validators
+Evaluation	       :   Custom evaluation framework
+Version Control	   :   Git / GitHub
 ````
 
 🚀 How to Run Locally
