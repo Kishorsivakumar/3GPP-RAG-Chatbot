@@ -48,7 +48,7 @@ The objective of this project is to build a RAG-based chatbot that:
 The system follows an evidence-first RAG architecture.
 
 
-```text
+text
                     User Question
                          │
                          ▼
@@ -95,8 +95,10 @@ The system follows an evidence-first RAG architecture.
                        Grounded Final Answer
                                   │
                                   ▼
-                         Sources + Sections
-🛡️ Hallucination Prevention
+                        Sources + Sections
+
+
+#🛡️ Hallucination Prevention
 
 Hallucination prevention is a core design goal of this project.
 
@@ -121,6 +123,8 @@ Claim Validation
 Completeness Validation
    ↓
 Grounded Answer
+
+
 1. Evidence Gate
 
 The Evidence Gate determines whether the retrieved evidence is sufficient to answer the question.
@@ -190,7 +194,8 @@ The AMF provides registration management.
 
 This allows the answer to be traced back to the source evidence.
 
-🔎 Retrieval Pipeline
+
+#🔎 Retrieval Pipeline
 
 The project uses multiple retrieval strategies because telecom standards contain both semantic concepts and highly specific terminology.
 
@@ -400,7 +405,9 @@ Conceptually:
 
 This behavior is a key part of the hallucination-control strategy.
 
-🏗️ Project Structure
+
+
+#🏗️ Project Structure
 3GPP-RAG-Chatbot/
 │
 ├── api/
@@ -465,7 +472,9 @@ This behavior is a key part of the hallucination-control strategy.
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-⚙️ Technologies Used
+
+
+#⚙️ Technologies Used
 Component	Technology
 Language	Python
 LLM	Google Gemini
@@ -479,7 +488,8 @@ Embeddings	Sentence Transformers
 Validation	Evidence / Claim / Completeness Validators
 Evaluation	Custom evaluation framework
 Version Control	Git / GitHub
-🚀 How to Run Locally
+
+#🚀 How to Run Locally
 1. Clone the repository
 git clone https://github.com/Kishorsivakumar/3GPP-RAG-Chatbot.git
 cd 3GPP-RAG-Chatbot
@@ -491,14 +501,15 @@ Windows
 pip install -r requirements.txt
 4. Configure Gemini
 
-Create a .env file:
+#Create a .env file:
 
 GEMINI_API_KEY=your_api_key
 RAG_LLM_MODEL=gemini-3.6-flash
 
 Do not commit .env or your API key to GitHub.
 
-🖥️ Run the Streamlit Frontend
+
+#🖥️ Run the Streamlit Frontend
 
 From the repository root:
 
@@ -541,7 +552,9 @@ The response contains information such as:
   "claim_validation": {},
   "completeness_validation": {}
 }
-🌐 Frontend
+
+
+#🌐 Frontend
 
 The Streamlit frontend provides an interactive interface for querying the 3GPP knowledge base.
 
@@ -554,7 +567,9 @@ Sources
 Specification section
 Claim validation
 Completeness information
-☁️ Deployment Status
+
+
+#☁️ Deployment Status
 
 The application was tested successfully in the local development environment.
 
@@ -564,7 +579,8 @@ The complete source code, processed knowledge base, retrieval indexes, evaluatio
 
 The project can therefore be run locally using the instructions above.
 
-⚠️ Limitations
+
+#⚠️ Limitations
 
 The current implementation has several practical limitations:
 
@@ -587,7 +603,9 @@ Automated hallucination and faithfulness metrics.
 Multi-document 3GPP knowledge-base support.
 Authentication and rate limiting for the API.
 Containerized production deployment.
-👨‍💻 Author
+
+
+#👨‍💻 Author
 
 Kishorsivakumar
 
@@ -597,7 +615,9 @@ GitHub:
 
 https://github.com/Kishorsivakumar
 
-📌 Project Repository
+
+
+#📌 Project Repository
 
 3GPP RAG Chatbot
 
