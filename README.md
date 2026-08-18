@@ -100,7 +100,7 @@ The system follows an evidence-first RAG architecture.
 
 
 
-##🛡️ Hallucination Prevention
+#🛡️ Hallucination Prevention
 
 Hallucination prevention is a core design goal of this project.
 
@@ -408,7 +408,7 @@ Conceptually:
 This behavior is a key part of the hallucination-control strategy.
 
 
-
+```
 #🏗️ Project Structure
 3GPP-RAG-Chatbot/
 │
@@ -474,8 +474,9 @@ This behavior is a key part of the hallucination-control strategy.
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
 
-
+```
 #⚙️ Technologies Used
 Component	Technology
 Language	Python
@@ -490,6 +491,7 @@ Embeddings	Sentence Transformers
 Validation	Evidence / Claim / Completeness Validators
 Evaluation	Custom evaluation framework
 Version Control	Git / GitHub
+````
 
 #🚀 How to Run Locally
 1. Clone the repository
