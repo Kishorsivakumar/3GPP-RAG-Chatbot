@@ -48,7 +48,7 @@ The objective of this project is to build a RAG-based chatbot that:
 The system follows an evidence-first RAG architecture.
 
 
-text
+```text
                     User Question
                          │
                          ▼
@@ -98,7 +98,8 @@ text
                         Sources + Sections
 
 
-#🛡️ Hallucination Prevention
+
+##🛡️ Hallucination Prevention
 
 Hallucination prevention is a core design goal of this project.
 
